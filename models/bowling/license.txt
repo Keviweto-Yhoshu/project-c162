@@ -1,0 +1,11 @@
+Model Information:
+* title:	S03C02 Bowling Ball
+* source:	https://sketchfab.com/3d-models/s03c02-bowling-ball-711fd112317b4eb0943ece3f0a9227b7
+* author:	thequinneffect (https://sketchfab.com/thequinneffect)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "S03C02 Bowling Ball" (https://sketchfab.com/3d-models/s03c02-bowling-ball-711fd112317b4eb0943ece3f0a9227b7) by thequinneffect (https://sketchfab.com/thequinneffect) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

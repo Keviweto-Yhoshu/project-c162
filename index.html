@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bowling Game</title>
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js​"> </script>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>   
+    <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+    <script src="roll.js"></script>
+    
+  </head>
+  <body>
+    <a-scene id="scene">
+
+      <!--Assets-->
+      <a-assets >
+        <a-assets-item
+        id="pin"
+        src="./models/bowling/bowling_pin.gltf"
+        ></a-assets-item>
+        
+      </a-assets>
+      
+      <!--Light-->
+      <a-entity light="type: ambient; color: yellow; intensity:0.49"></a-entity>
+
+      <!--Camera and Cursor-->
+      <a-entity
+        id="camera"
+        camera
+        position="0 1.6 16"
+        wasd-controls
+        look-controls="pointerLockEnabled: false"        
+      >
+      <a-entity
+      id="weapon"
+      gltf-model ="#shooter"
+      position="0 -4.4 3"
+      rotation = "0 180 0 "
+      scale="0.3 1 1"
+      ></a-entity>
+        <a-cursor></a-cursor>        
+      </a-entity>
+
+      <!--Balls-->
+      <a-entity B_Ball></a-entity>
+
+      <!--Ground-->
+      <a-plane
+        id="ground"
+        repeat="5 5"
+        position="0 1 0"
+        rotation="-90 0 0"
+        height="200"
+        width="200"
+        color="#FBF2D4"
+        static-body
+        visible="true"
+      >
+      </a-plane>
+      <!--Models-->
+      <a-entity>
+        <a-entity position="-2 1.6 2" rotation="0 55 0" scale="0.05 0.05 0.05" 
+        gltf-model="#pin" shadow="cast: false;">
+        </a-entity>
+      </a-entity>
+
+      <a-entity>
+        <a-entity position="-1 1.6 2" rotation="0 55 0" scale="0.05 0.05 0.05" 
+        gltf-model="#pin" shadow="cast: false;">
+        </a-entity>
+      </a-entity>
+
+      <a-entity>
+        <a-entity position="0 1.6 2" rotation="0 55 0" scale="0.05 0.05 0.05" 
+        gltf-model="#pin" shadow="cast: false;">
+        </a-entity>
+      </a-entity>
+
+      <a-entity>
+        <a-entity position="1 1.6 2" rotation="0 55 0" scale="0.05 0.05 0.05" 
+        gltf-model="#pin" shadow="cast: false;">
+        </a-entity>
+      </a-entity>
+
+      <a-entity>
+        <a-entity position="-1.5 1.6 2.5" rotation="0 55 0" scale="0.05 0.05 0.05" 
+        gltf-model="#pin" shadow="cast: false;">
+        </a-entity>
+      </a-entity>
+
+      <a-entity>
+        <a-entity position="-0.5 1.6 2.5" rotation="0 55 0" scale="0.05 0.05 0.05" 
+        gltf-model="#pin" shadow="cast: false;">
+        </a-entity>
+      </a-entity>
+
+      <a-entity>
+        <a-entity position="0.5 1.6 2.5" rotation="0 55 0" scale="0.05 0.05 0.05" 
+        gltf-model="#pin" shadow="cast: false;">
+        </a-entity>
+      </a-entity>
+
+      <a-entity>
+        <a-entity position="-0.25 1.6 3" rotation="0 55 0" scale="0.05 0.05 0.05" 
+        gltf-model="#pin" shadow="cast: false;">
+        </a-entity>
+      </a-entity>
+
+      <a-entity>
+        <a-entity position="0.25 1.6 3" rotation="0 55 0" scale="0.05 0.05 0.05" 
+        gltf-model="#pin" shadow="cast: false;">
+        </a-entity>
+      </a-entity>
+
+      <a-entity>
+        <a-entity position="-0.75 1.6 3.5" rotation="0 55 0" scale="0.05 0.05 0.05" 
+        gltf-model="#pin" shadow="cast: false;">
+        </a-entity>
+      </a-entity>
+      
+    </a-scene>
+  </body>
+</html>
